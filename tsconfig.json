@@ -1,3 +1,17 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "target": "esnext",                       // Use modern JavaScript features
+    "lib": ["es6", "dom"],                    // Include ECMAScript and DOM libraries for typing
+    "allowJs": true,                          // Allow JavaScript files
+    "skipLibCheck": true,                     // Skip type checking of declaration files
+    "esModuleInterop": true,                  // Enable compatibility with CommonJS modules
+    "strict": true,                           // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in filenames
+    "moduleResolution": "node",               // Resolve modules like Node.js
+    "resolveJsonModule": true,                // Allow importing JSON files
+    "isolatedModules": true,                  // Enable isolated modules (important for React Native)
+    "noEmit": true,                           // Don't emit output (handled by React Native bundler)
+    "jsx": "react-native"                     // Enable React Native JSX syntax
+  },
+  "include": ["**/*"],
 }
